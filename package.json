@@ -1,0 +1,33 @@
+{
+  "name": "mongodb-class",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm run import-data",
+    "dev": "nodemon app.js",
+    "start": "DEBUG= node app.js",
+    "import-data": "node data/loadMovieDetailsDataset.js"
+  },
+  "keywords": [
+    "course"
+  ],
+  "author": "Andre L. Adriano",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "~1.18.3",
+    "compression": "~1.7.3",
+    "consolidate": "~0.15.1",
+    "debug": "~3.1.0",
+    "dotenv": "~6.0.0",
+    "express": "~4.16.3",
+    "mongodb": "~3.1.1",
+    "nunjucks": "~3.1.3"
+  },
+  "devDependencies": {
+    "eslint": "~4.19.1",
+    "eslint-config-airbnb-base": "~13.0.0",
+    "eslint-plugin-import": "~2.12.0"
+  }
+}
